@@ -39,20 +39,34 @@
             margin: auto;
             padding: 10px;
             background: #dbc396;
-            border-radius: 5px;
         }
+        
+    .buttons{
+      text-align: center;
+      margin-top: 30px;
+    }
+    input[type="reset"],
+    input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: #513817;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
         legend {
             font-weight: bolder;
             color: #5a3e36;
             font-size: 1.2em;
             border-radius: 15px;
-            padding: 5px;
-            box-shadow: #5a3e36 0px 0px 10px;
         }
     </style>
 </head>
 
 <body>
+    <img src="ChatGPT-Image-29-de-jul.-de-2025_-19_24_12.svg" alt="" width="150" style="display: block; margin: 0 auto;">
     <h1>
         Cadastro de Funcionario
     </h1>
@@ -66,6 +80,10 @@
             <input type="text" name="" id=""><br>
             Função:
             <input type="text" name="" id=""><br>
+            Telefone:
+            <input type="text" name="" id=""><br>
+            Email:
+            <input type="email" name="" id=""><br>
             Data de Admissão:
             <input type="date" name="" id=""><br>
             Data de Nascimento:
@@ -73,9 +91,10 @@
             Sexo:
             <input type="radio" value="Masculino" name="sexo" id=""> Masculino
             <input type="radio" value="Feminino" name="sexo"> Feminino <br>
-            <div class="buttons">
-                <button type="submit">Cadastrar</button>
-                <button type="reset">Limpar</button>
+            <div style="margin-top: 0px;" class="buttons">
+            <input type="reset" value="Limpar" />
+            <input type="submit" value="Salvar" />
+          </div>
 
         </fieldset>
     </form>

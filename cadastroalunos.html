@@ -33,6 +33,7 @@
 </style>
 </head>
 <body>
+  <img src="ChatGPT-Image-29-de-jul.-de-2025_-19_24_12.svg" alt="" width="150" style="display: block; margin: 0 auto;">
 
 
 <div class="container">
@@ -55,6 +56,19 @@
         padding: 35px;
         border-radius: 25px;
         box-shadow: 0 8px 24px;
+    }
+    legend {
+        font-weight: bolder;
+        color: #5a3e36;
+        font-size: 1.2em;
+        border-radius: 15px;
+    }
+    fieldset {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        background: #dbc396;
+        border-radius: 5px;
     }
     h2{
         text-align: center;
@@ -93,7 +107,18 @@
     }
     .buttons{
       text-align: center;
-      margin-top: 25px;
+      margin-top: 30px;
+    }
+    input[type="reset"],
+    input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: #513817;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
     .footer {
       text-align: center;
@@ -126,16 +151,22 @@ a:hover {
  <fieldset>
     <legend>Informações Pessoais</legend>
 
-            Matricula:
-            <Input type="text" name="" id=""><br>
-            Nome:
-            <input type="text" name="" id=""><br>
-            Data de Nascimento:
-            <input type="date" name="" id=""><br>
-            Sexo:
+            <label>Matricula:
+            <Input type="text" name="" id=""></label>
+            <label>Nome:
+            <input type="text" name="" id=""></label>
+            <label>Nome da Mãe:
+            <input type="text" name="" id=""></label>
+            <label>Nome do Pai:
+            <input type="name" name="" id=""></label>
+            <label>Telefone:
+            <input type="text" name="" id=""></label>
+            <label>Data de Nascimento:
+            <input type="date" name="" id=""></label>
+            <label>Sexo:
             <input type="radio" value="Masculino" name="sexo" id=""> Masculino
-            <input type="radio" value="Feminino" name="sexo"> Feminino <br>
-            <div style="margin-top: 16px;">
+            <input type="radio" value="Feminino" name="sexo"> Feminino </label><br>
+            <div style="margin-top: 0px;" class="buttons">
             <input type="reset" value="Limpar" />
             <input type="submit" value="Salvar" />
           </div>
