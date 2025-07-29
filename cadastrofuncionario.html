@@ -13,18 +13,41 @@
             color:black;
             padding: 20px;
         }
-
+        .buttons {
+            margin-top: 10px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #5a3e36;
+            font-weight: bold;
+        }
         h1
         {
             text-align: center;
+            color: #5a3e36;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
-
         fieldset {
             width: 300px;
             margin: auto;
             padding: 10px;
             background: #dbc396;
             border-radius: 5px;
+        }
+        legend {
+            font-weight: bolder;
+            color: #5a3e36;
+            font-size: 1.2em;
+            border-radius: 15px;
+            padding: 5px;
+            box-shadow: #5a3e36 0px 0px 10px;
         }
     </style>
 </head>
@@ -41,11 +64,18 @@
             <Input type="text" name="" id=""><br>
             Nome:
             <input type="text" name="" id=""><br>
+            Função:
+            <input type="text" name="" id=""><br>
+            Data de Admissão:
+            <input type="date" name="" id=""><br>
             Data de Nascimento:
             <input type="date" name="" id=""><br>
             Sexo:
             <input type="radio" value="Masculino" name="sexo" id=""> Masculino
             <input type="radio" value="Feminino" name="sexo"> Feminino <br>
+            <div class="buttons">
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
 
         </fieldset>
     </form>
