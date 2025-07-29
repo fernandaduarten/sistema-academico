@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: #b40e90;
+  padding: 5px;
+}
+.container > div {
+  background-color: rgba(228, 214, 227, 0.8);
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.footer {
+  grid-area: footer;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="header"><h2>Cadastro de alunos</h2></div>
+  <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'segoe UI', san-serif;
+        background-color: antiquewhite;
+        padding: 40px;
+    }
+    .container{
+        max-width: 600px;
+        background-color: #dbc396;
+        margin: auto;
+        padding: 35px;
+        border-radius: 25px;
+        box-shadow: 0 8px 24px;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 25px;
+        color: rgb(2, 1, 0);
+    }
+    label{
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bolder;
+        color: black;
+    }
+    input[type="text"]
+    input[type="number"]
+    input[type="date"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 16px;
+        font-size: 14px;
+        transition: border 0.3s ease;
+    }
+    .sexo-group{
+      display: flex;
+      gap: 20px;
+      margin: 6px;
+    }
+    .sexo-group label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background-color: aliceblue;
+      padding: 8px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .buttons{
+      text-align: center;
+      margin-top: 25px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #070000;
+    }
+    .footer a {
+      text-decoration: none;
+      color: #a58211;
+      font-weight: bold;
+    }
+    a {
+  display: block;
+  margin-bottom: 8px;
+  color: #5a3d0f;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  background-color: #d4b97f;
+  color: white;
+}
+
+  </style>
+  <div class="menu"><a href="#">Principal</a><br><a href="#">Cadastro de Professor</a><br><a href="#">Cadastro de Alunos</a></div>
+ <fieldset>
+    <legend>Informações Pessoais</legend>
+
+            Matricula:
+            <Input type="text" name="" id=""><br>
+            Nome:
+            <input type="text" name="" id=""><br>
+            Data de Nascimento:
+            <input type="date" name="" id=""><br>
+            Sexo:
+            <input type="radio" value="Masculino" name="sexo" id=""> Masculino
+            <input type="radio" value="Feminino" name="sexo"> Feminino <br>
+            <div style="margin-top: 16px;">
+            <input type="reset" value="Limpar" />
+            <input type="submit" value="Salvar" />
+          </div>
+ </fieldset>
+  <div class="footer"><h4>Feito Por: <a href="#">Fernanda Duarte</a></h4></div>
+</div>
+
+</body>
+</html>
+
+
