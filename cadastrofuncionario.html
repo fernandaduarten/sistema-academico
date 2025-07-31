@@ -6,80 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro De Alunos</title>
     <style>
+        /* === fundo da pagina e estilo geral dela === */
         body {
-            background: antiquewhite;
+            background: #f0f4f8; /* cor de fundo site */
             font-family: 'Segoe UI', sans-serif;
             margin: 0;
-            color:black;
+            color: #13293d; /* cor do texto */
             padding: 20px;
         }
+        /* === espaçamento dos botões gerais === */
         .buttons {
             margin-top: 10px;
+            text-align: center;
         }
+        /* === barra superior do menu === */
         .menu {
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
+            background-color: #247ba0; /* cor de fundo do menu */
+            padding: 10px;
+            border-radius: 8px;
         }
+        /* === links do menu === */
         .menu a {
             margin: 0 15px;
             text-decoration: none;
-            color: #5a3e36;
+            color: #ffffff; /* cor dos links */
             font-weight: bold;
         }
-        h1
-        {
+        /* === links do menu ao passar o mouse === */
+        .menu a:hover {
+            color: #1b98e0; /* cor dos links ao passar o mouse */
+        }
+        /* === título principal da página === */
+        h1 {
             text-align: center;
-            color: #5a3e36;
+            color: #13293d; /* cor do título */
             font-size: 2em;
             margin-bottom: 20px;
         }
-        fieldset {
-            width: 350px;
-            margin: auto;
-            padding: 10px;
-            background: #dbc396;
-        }
-        
-    .buttons{
-      text-align: center;
-      margin-top: 30px;
-    }
-    input[type="reset"],
-    input[type="submit"] {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 8px;
-        background-color: #513817;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-        legend {
-            font-weight: bolder;
-            color: #5a3e36;
-            font-size: 1.2em;
-            border-radius: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: bolder;
-            color: black;
-        }
+        /* === campo de formulário === */
         fieldset {
             width: 400px;
             margin: auto;
             padding: 10px;
-            background: #dbc396;
-            border-radius: 5px;
+            background: #ffffff; /* cor de fundo do campo de formulário */
+            border: 2px solid 006494; /* borda azul */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(19, 41, 61, 0.1); /* sombra do campo de formulário */
+        }
+        /* === legenda do campo de formulário === */
+        legend {
+            font-weight: bolder;
+            color: #13293d; /* cor da legenda */
+            font-size: 1.2em;
+            border-radius: 15px;
+        }
+        /* === labels dos campos === */
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bolder;
+            color: #13293d; /* cor das labels */
+        }
+        /* === campos de entrada de texto, número, data e email === */
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #034b6c; /* borda azul */
+            border-radius: 6px;
+            background-color: #e8f1f2; /* cor de fundo dos campos */
+            color: #13293d; /* texto interno */
+            font-size: 14px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+        /* === botões do formulario === */
+        input[type="reset"],
+        input[type="submit"],
+        .buttons {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #034b6c; /* cor de fundo dos botões */
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        /* === botões ao passar o mouse === */
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            background-color: #327a92;
         }
     </style>
 </head>
 
 <body>
-    <img src="ChatGPT-Image-29-de-jul.-de-2025_-19_24_12.svg" alt="" width="150" style="display: block; margin: 0 auto;">
+    <img src="ChatGPT-Image-29-de-jul.-de-2025_-19_24_12.svg" alt="" width="150"
+        style="display: block; margin: 0 auto;">
     <h1>
         Cadastro de Funcionario
     </h1>
@@ -88,26 +122,26 @@
             <legend>Informações Pessoais</legend>
 
             <label>Matricula:
-            <Input type="text" name="" id=""></label>
+                <Input type="text" name="" id=""></label>
             <label>Nome:
-            <input type="text" name="" id=""></label>
+                <input type="text" name="" id=""></label>
             <label>Função:
-            <input type="text" name="" id=""></label>
+                <input type="text" name="" id=""></label>
             <label>Telefone:
-            <input type="number" name="" id=""></label>
+                <input type="number" name="" id=""></label>
             <label>Email:
-            <input type="email" name="" id=""></label>
+                <input type="email" name="" id=""></label>
             <label>Data de Admissão:
-            <input type="date" name="" id=""></label>
+                <input type="date" name="" id=""></label>
             <label>Data de Nascimento:
-            <input type="date" name="" id=""></label>
+                <input type="date" name="" id=""></label>
             <label>Sexo:
-            <input type="radio" value="Masculino" name="sexo" id=""> Masculino
-            <input type="radio" value="Feminino" name="sexo"> Feminino <br>
-            <div style="margin-top: 0px;" class="buttons">
-            <input type="reset" value="Limpar" />
-            <input type="submit" value="Salvar" />
-          </div>
+                <input type="radio" value="Masculino" name="sexo" id=""> Masculino
+                <input type="radio" value="Feminino" name="sexo"> Feminino <br>
+                <div style="margin-top: 0px;" class="buttons">
+                    <input type="reset" value="Limpar" />
+                    <input type="submit" value="Salvar" />
+                </div>
 
         </fieldset>
     </form>
