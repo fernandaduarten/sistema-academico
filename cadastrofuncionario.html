@@ -48,12 +48,11 @@
         }
         /* === campo de formulário === */
         fieldset {
-            width: 400px;
-            margin: auto;
-            padding: 13px;
+            width: 450px; /* largura do campo de formulário */
+            margin: auto; /* centraliza o campo de formulário */
+            padding: 14px; /* espaçamento interno do campo de formulário */
             background: #ffffff; /* cor de fundo do campo de formulário */
-            border: 2px solid 006494; /* borda azul */
-            border-radius: 10px;
+            border-radius: 10px; /* borda arredondada do campo de formulário */
             box-shadow: 0 2px 10px rgba(19, 41, 61, 0.1); /* sombra do campo de formulário */
         }
         /* === legenda do campo de formulário === */
@@ -74,41 +73,57 @@
         input[type="text"],
         input[type="number"],
         input[type="date"],
+        input[type="password"],
         input[type="email"],
         select,
         textarea {
-            width: 90%;
-            padding: 10px;
-            margin-bottom: 10px;
-            padding: 8px;
-            margin-bottom: 10px;
+            width: 90%; /* largura dos campos de entrada */
+            padding: 15px; /* espaçamento interno dos campos de entrada */
+            margin-bottom: 15px; /* espaçamento entre os campos */
+            padding: 8px; /* espaçamento interno dos campos */
+            margin-bottom: 10px; /* espaçamento entre os campos */
             border: 1px solid #034b6c; /* borda azul */
             border-radius: 6px;
             background-color: #e8f1f2; /* cor de fundo dos campos */
             color: #13293d; /* texto interno */
             font-size: 14px;
         }
+        /* === grupo de botões de opção (sexo) === */
+        .sexo-group {
+            display: flex;
+            gap: 20px; /* espaçamento entre os botões de opção */
+            margin: 6px;
+        }
+        /* espaçamento entre o botão de opção e o texto */
+        .sexo-group label {
+            display: flex;
+            align-items: center;
+            gap: 6px; /* espaçamento entre o botão de opção e o texto */
+            background-color: #f0f4f8; /* cor de fundo dos botões de opção */
+            padding: 8px; /* espaçamento interno dos botões de opção */
+            border-radius: 20px; /* borda arredondada dos botões de opção */
+            cursor: pointer; /* cursor ao passar o mouse */
+        }
         .buttons {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
         }
         /* === botões do formulario === */
         input[type="reset"],
         input[type="submit"],
-        .buttons {
-            padding: 5px 10px;
-            border: none;
-            border-radius: 8px;
+        button {
             background-color: #034b6c; /* cor de fundo dos botões */
-            color: #fff;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+            color: #ffffff; /* cor do texto dos botões */
+            padding: 10px 20px; /* espaçamento interno dos botões */
+            border: none; /* sem borda */
+            border-radius: 8px; /* borda arredondada dos botões */
+            cursor: pointer; /* cursor ao passar o mouse */
+            font-size: 16px;
         }
         /* === botões ao passar o mouse === */
-        input[type="reset"]:hover,
+        input[type="reset"]:hover, 
         input[type="submit"]:hover {
-            background-color: #327a92;
+            background-color: #38b0d5;
         }
     </style>
 </head>
@@ -133,6 +148,9 @@
                 <input type="number" name="" id=""></label>
             <label>Email:
                 <input type="email" name="" id=""></label>
+                <label> Senha:
+                <input type="password" name="" id=""></label>
+                </label>
             <label>Data de Admissão:
                 <input type="date" name="" id=""></label>
             <label>Data de Nascimento:
@@ -140,7 +158,7 @@
             <label>Sexo:
                 <input type="radio" value="Masculino" name="sexo" id=""> Masculino
                 <input type="radio" value="Feminino" name="sexo"> Feminino <br>
-                <div style="margin-top: 0px;" class="buttons">
+                <div style="margin-top: 1px;" class="buttons">
                     <input type="reset" value="Limpar" />
                     <input type="submit" value="Salvar" />
                 </div>
