@@ -5,6 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>controle de notas</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+form {
+    background: #ffffff;
+    padding: 15px;
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 5px;
+}
+
+button, input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #45a049;
+}
+    #resultado {
+        margin-top: 20px;
+        font-size: 1.2em;
+        color: #333;
+        text-align: center;
+    }
+    </style>
 </head>
 
 <body>
@@ -17,6 +56,7 @@
         Primeira Nota: <input type="text" name="nota1"> <br>
         Segunda Nota: <input type="text" name="nota2"> <br>
         <input type="button" name="button" value="calcular Média" onclick="resultado(this.form)">
+
     </form>
     <div id="resultado"></div>
     <script>
@@ -33,7 +73,6 @@
                 //alert("Reprovado");
                 document.getElementById("resultado").innerHTML = "Reprovado com média: " + media;
             }
-
         }
     </script>
 </body>
