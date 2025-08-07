@@ -10,7 +10,7 @@ body {
 
 main {
 
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(252, 249, 249, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,38 +23,38 @@ main {
     padding: 10px;
     margin: auto;
 }
-
+body {
+  background-color:hotpink;
+}
 nav ul {
-    height: 38px;
-    list-style: none;
-    padding: 0;
-    border: 2px solid rgba(31, 50, 112, 0.3);
-    background-color: #fff;
+  height: 38px;
+  list-style: none;
+  padding: 0;
+  border: 2px solid rgba(31, 50, 112, 0.3);
+  background-color: #fff;
 }
 
 nav ul li {
-    float: left;
-
-    border-left: 1px solid rgba(31, 50, 112, 0.3);
-    border-right: 1px solid rgba(31, 50, 112, 0.3);
-}
-
-nav ul li:hover {
-    background-color: darkblue;
-    color: white;
+  float: left;
+  border-left: 1px solid rgba(31, 50, 112, 0.3);
+  border-right: 1px solid rgba(31, 50, 112, 0.3);
 }
 
 nav ul li a {
-    color: rgb(21, 21, 235);
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 8px 56px;
-    line-height: 2em;
-    text-align: center;
-
+  color: darkblue;
+  text-decoration: none;
+  /* font-size: 1.2em; */
+  padding: 8px 56px;
+  line-height: 2em;
+  text-align: center;
 }
-nav ul li a:hover {
-    color: white;
+
+nav ul li:first-child {
+  border-left: none;
+}
+
+nav ul li:last-child {
+  border-right: none;
 }
 
 aside {
