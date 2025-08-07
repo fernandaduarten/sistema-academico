@@ -1,7 +1,10 @@
 body {
-
+    background: linear-gradient(to bottom, #f0f8ff, #d6eaf8);
     background-image: url(../imagens/paw-solid-full.svg);
-    background-size: 50px;
+    background-size: 80px;
+    background-repeat: repeat;
+    background-position: center top;
+    background-attachment: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -31,44 +34,54 @@ nav ul {
 
 nav ul li {
     float: left;
+
     border-left: 1px solid rgba(31, 50, 112, 0.3);
     border-right: 1px solid rgba(31, 50, 112, 0.3);
 }
 
+nav ul li:hover {
+    background-color: darkblue;
+    color: white;
+}
+
 nav ul li a {
-    color: darkblue;
+    color: rgb(21, 21, 235);
     text-decoration: none;
     font-size: 1.2em;
     padding: 8px 56px;
     line-height: 2em;
     text-align: center;
+
 }
+nav ul li a:hover {
+    color: white;
+}
+
 aside {
-
-float: right;
-
-background-color: #fff;
-
-padding: 15px;
-
-color: darkblue;
-
-border: 1px solid rgba(31, 50, 112, 0.3);
-
-border-radius: 5% 20%;
-
+    float: right;
+    background-color: #fff;
+    padding: 15px;
+    color: darkblue;
+    border: 1px solid rgba(31, 50, 112, 0.3);
+    border-radius: 5% 20%;
+}
+aside a :hover {
+    background-color: rgba(31, 50, 112, 0.3)
 }
 
 aside img {
-
-width: 32px;
-
-padding: 3px;
-
+    width: 32px;
+    padding: 3px;
 }
 
 aside a {
+    text-decoration: none;
+}
 
-text-decoration: none;
+nav ul li:first-child {
+    border-left: none;
+}
 
+nav ul li:last-child {
+    border-right: none;
 }
