@@ -1,15 +1,74 @@
 body {
 
-background-image: url(../imagens/paw-solid-full.svg);
-background-size: 50px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(../imagens/paw-solid-full.svg);
+    background-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {
 
-background-color: rgba(255, 255, 255, 0.9);
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 1024px;
+    padding: 10px;
+    margin: auto;
+}
+
+nav ul {
+    height: 38px;
+    list-style: none;
+    padding: 0;
+    border: 2px solid rgba(31, 50, 112, 0.3);
+    background-color: #fff;
+}
+
+nav ul li {
+    float: left;
+    border-left: 1px solid rgba(31, 50, 112, 0.3);
+    border-right: 1px solid rgba(31, 50, 112, 0.3);
+}
+
+nav ul li a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 56px;
+    line-height: 2em;
+    text-align: center;
+}
+aside {
+
+float: right;
+
+background-color: #fff;
+
+padding: 15px;
+
+color: darkblue;
+
+border: 1px solid rgba(31, 50, 112, 0.3);
+
+border-radius: 5% 20%;
+
+}
+
+aside img {
+
+width: 32px;
+
+padding: 3px;
+
+}
+
+aside a {
+
+text-decoration: none;
 
 }
