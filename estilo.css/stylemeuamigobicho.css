@@ -24,7 +24,7 @@ main {
     margin: auto;
 }
 body {
-  background-color:hotpink;
+  background-color: #a95dd8;
 }
 nav ul {
   height: 38px;
@@ -41,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: darkblue;
+  color: rgb(171, 61, 221);
   text-decoration: none;
   /* font-size: 1.2em; */
   padding: 8px 56px;
