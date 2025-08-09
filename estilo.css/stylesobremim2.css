@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #181818;
+    color: white;
+}
+
+/* MENU LATERAL */
+.sidebar {
+    background-color: #111;
+    color: white;
+    width: 240px;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+    background-color: #333;
+    padding-left: 10px;
+}
+
+.sidebar .social-icons a {
+    color: white;
+    font-size: 1.4em;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.sidebar .social-icons a:hover {
+    color: #1da1f2;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.content {
+    margin-left: 240px;
+    padding: 20px;
+    flex: 1;
+}
+
+.hero {
+    background-color: #222;
+    padding: 50px;
+    text-align: center;
+}
+
+.content-section {
+    padding: 20px 0;
+}
+
+.btn {
+    background-color: #1da1f2;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0d8ddb;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.copy {
+    font-size: 0.9em;
+    color: #aaa;
+}
