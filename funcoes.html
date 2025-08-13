@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="titulo">O que o JavaScript faz?</h2>
+<p>JavaScript pode mostrar ou ocultar elementos HTML!</p>
+
+<p id="demo" style="display:none">Olá JV!.</p>
+
+<button type="button" onclick="ocultar()">ocultar!</button>
+
+<button type="button" onclick="mostrar()">mostrar!</button>
+
+<script>
+function mostrar() {
+  document.getElementById('demo').style.display = 'block';
+  document.getElementById('titulo').style.color = '#ff0000';
+}
+
+function ocultar() {
+  document.getElementById('demo').style.display = 'none';
+  document.getElementById('titulo').style.color = '#000000';
+}
+</script>
+
+</body>
+</html> 
