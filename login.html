@@ -58,26 +58,27 @@
       <h1>Sistema Acadêmico</h1>
       <form name="myform" action="" onsubmit="return testa_form(event)" method="get" style="max-width: 500px;">
 
+        <fieldset>
+          <legend>Cadastro de Usuário</legend>
+          <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 10px; align-items: center;">
 
-      <fieldset>
-        <legend>Cadastro de Usuário</legend>
-        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 10px; align-items: center;">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome do Aluno">
 
-          <label for="nome">Nome:</label>
-          <input type="text" name="nome" id="nome" placeholder="Nome do Aluno">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="******">
+            <label for="confirm-senha">Confirmar Senha:</label>
+            <input type="password" name="confirmSenha" id="confirmSenha" placeholder="******">
 
-          <label for="senha">Senha:</label>
-          <input type="password" name="senha" id="senha" placeholder="******">
-          <label for="confirm-senha">Confirmar Senha:</label>
-          <input type="password" name="confirmSenha" id="confirmSenha" placeholder="******">
-
-          <div style="grid-column: 1 / span 2; text-align: center; margin-top: 10px;">
-            <input type="submit" value="Submit">
-            <button type="reset">Limpar</button>
+            <div style="grid-column: 1 / span 2; text-align: center; margin-top: 10px;">
+              <input type="submit" value="Submit">
+              <button type="reset">Limpar</button>
+            </div>
           </div>
-        </div>
-      </fieldset>
+        </fieldset>
       </form>
+
+      <p id="resultado"></p>
 </body>
 
 </html>
