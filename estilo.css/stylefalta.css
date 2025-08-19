@@ -1,0 +1,17 @@
+form {
+      max-width: 500px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+      align-items: center;
+    }
+    label {
+      text-align: right;
+    }
+    .button-group {
+      grid-column: 1 / span 2;
+      text-align: center;
+      margin-top: 10px;
+    }
